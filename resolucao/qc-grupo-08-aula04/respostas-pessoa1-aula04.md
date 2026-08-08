@@ -306,3 +306,30 @@ Mas entendendo que é MVP e não produto final.
 
 
 ## 🔴 Nível 3 — Avançado: Embeddings Reais e LLMs
+
+### Exercício 3.2 — Custom Vision para classificar a linha "QC Premium"
+
+A QC tem uma linha exclusiva "Premium" com 12 modelos próprios. Vision pronto não os reconhece.
+
+**Tarefa:**
+
+a) Acesse [Custom Vision](https://www.customvision.ai/) com sua conta Azure.
+
+b) Crie um projeto **Image Classification — Multiclass** com 3 tags fictícias da linha QC (ex: `qc-sofa-premium`, `qc-poltrona-premium`, `qc-mesa-premium`).
+
+c) Para cada tag, faça upload de **15-20 imagens** (pode usar imagens livres do Unsplash para simulação).
+
+d) **Treine** o modelo (Quick Training — ~5 min, gratuito).
+
+e) Avalie: precision/recall do modelo no validation set.
+
+f) **Publique** o modelo e teste via API REST.
+
+g) Documente no `entrega-grupo-aula04.md`:
+   - Print do dashboard com métricas
+   - URL da prediction API
+   - Custo estimado para 50k predições/mês
+
+
+
+---
