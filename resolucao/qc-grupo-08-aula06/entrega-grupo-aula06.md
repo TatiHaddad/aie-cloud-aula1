@@ -15,6 +15,17 @@
 | 3 | Lucas Marujo Amadeu | https://github.com/lucasmarujo | rm370469@fiap.com.br |
 
 
+## Distribuição do trabalho
+
+| Membro | Nível assumido | Item específico |
+|--------|----------------|-----------------|
+| **Tatiana Mastrogiovanni Haddad** | 🟢 **N1 + Reflexão ** | Passo 1 e 2 |
+| **Luciana Chaves D'Olivo** | 🟢 **N1 + Reflexão ** | Passo 3 e 4 |
+| **Lucas Marujo Amadeu** | 🟢 **N1 + Reflexão ** | Passo 5 |
+
+
+---
+
 ## Objetivo
 
 Estimar o custo mensal da arquitetura completa da Quantum Commerce em escala real (não free tier). Este resultado entra no projeto integrado final (seção finops/).
@@ -105,6 +116,6 @@ Link compartilhável da calculadora com otimização de 1 ano Reserved: https://
 
 A surpresa na análise foi descobrir que os serviços cognitivos dominam o custo da arquitetura QC e não a infraestrutura de dados.
 Speech e Language juntos representam 46% , com vision 53%, da fatura. E isso inverte a intuição comum de que dados é sempre o maior custo em cloud.
-Ao analisar o custo entre batch e real-time no Speech também foi possível ver uma diferença de 5,5 pelo mesmo resultado ($0,18/hora no batch vs $1,00/hora no real-time), o que mostra que uma decisão de arquitetura pequena que é quanado processar o audio tem um impacto direto de ~$4.100/mês na fatura e isso conecta com toda a disciplina:
+Ao analisar o custo entre batch e real-time no Speech também foi possível ver uma diferença de 5,5 pelo mesmo resultado ($0,18/hora no batch vs $1,00/hora no real-time), o que mostra que uma decisão de arquitetura pequena que é quando processar o audio tem um impacto direto de ~$4.100/mês na fatura e isso conecta com toda a disciplina:
 FinOps não é sobre cortar custo, é sobre alocar custo onde gera valor.
 Também foi possível ver que transcrever 5.000 horas integrais enquanto uma amostra de 20% já seria o suficinete para a análise de qualidade é um desperdício. A arquitetura de um sistema agentic precisa pensar em custo por tomada de decisão, não só em custo por componente provisionado. Cada tool do agente tem um custo de inferência e esse custo escala com o volume de interações dos usuários da QC.
